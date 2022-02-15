@@ -1,0 +1,34 @@
+.backgroundimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contrast {
+  background-color: linear-gradient(rgba(20, 20, 20, 0.9), transparent);
+  color: white;
+  text-align: left;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.uname {
+  font-weight: 500;
+  font-size: medium;
+}
+.ulocation {
+  font-size: small;
+}
+
+.image-card {
+  border-radius: 15px;
+  position: relative;
+}
+.image-card:nth-child(n) {
+  grid-row: span 2;
+}
+.image-card:nth-child(3n + 2) {
+  grid-row: span 3;
+}
